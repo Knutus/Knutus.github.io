@@ -7,154 +7,179 @@
     <style>
         /* General Body Styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 40px;
             color: #333;
-            background-color: #f5f7fa;
-            text-align: center;
-            line-height: 1.6;
+            background-color: #f9f9f9;
         }
 
         /* Header Styling */
         .header {
-            padding: 20px;
-            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
             font-size: 2em;
+            margin: 0;
             font-weight: bold;
-            max-width: 600px;
-            margin: 0 auto 20px;
+            color: black;
         }
 
         /* Contact Information Styling */
-        .container {
-            padding: 15px;
-            background-color: #fff;
-            margin: 20px auto;
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            max-width: 700px;
+            margin: 0 auto;
             font-size: 1em;
-            max-width: 600px;
-            line-height: 1.5;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
 
-        .container a {
-            color: #000;
+        .contact-info a {
+            color: #333;
             text-decoration: none;
         }
 
         /* Section Titles Styling */
         .section-title {
             font-size: 1.5em;
-            color: #000;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            border-bottom: 2px solid #333;
+            color: #333;
+            margin-top: 30px;
             padding-bottom: 5px;
-            max-width: 600px;
+            text-align: center;
+        }
+
+        .section-divider {
+            max-width: 700px; /* Matches the content width */
             margin: 0 auto;
+            border-top: 2px solid #333;
+            margin-bottom: 20px;
         }
 
         /* Resume Items Styling */
         .resume-item {
             background-color: #fff;
-            padding: 20px;
-            margin: 15px auto;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 700px;
             border-radius: 5px;
             border: 1px solid #ddd;
-            max-width: 600px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
 
         /* Resume Item Details Styling */
+        .resume-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
         .resume-item p, .resume-item ul {
             margin: 5px 0;
-            font-weight: 500;
-            color: #333;
         }
 
         /* List Styling */
         .resume-item ul {
             list-style-type: disc;
             padding-left: 20px;
-            color: #555;
         }
 
         /* Skills and Certificates Styling */
         .skills, .certificates {
+            list-style: none;
             padding: 0;
-            list-style-type: none;
+            max-width: 700px;
             margin: 0 auto;
-            text-align: center;
         }
 
         .skills li, .certificates li {
             padding: 5px 0;
-            font-size: 1em;
             font-weight: bold;
         }
-
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <div class="header">
-        Knut Ovesjö
+        <h1>Knut Ovesjö</h1>
     </div>
 
-    <div class="container">
-        <p><a href="tel:+46721525045">072 152 50 45</a></p>
-        <p><a href="mailto:knut.ovesjo@gmail.com">knut.ovesjo@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/ovesjo/">www.linkedin.com/in/ovesjo</a></p>
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <div>
+            <p><a href="tel:+46721525045">tel: 072 152 50 45</a></p>
+        </div>
+        <div>
+            <p><a href="mailto:knut.ovesjo@gmail.com">knut.ovesjo@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/ovesjo/">www.linkedin.com/in/ovesjo</a></p>
+        </div>
     </div>
 
+    <!-- Education Section -->
     <div class="section-title">Education</div>
+    <div class="section-divider"></div>
     <div class="resume-item">
-        <p><strong>KTH Royal Institute of Technology</strong> | 2022 - Present</p>
+        <h3>KTH Royal Institute of Technology</h3>
+        <p>2022 -- Present</p>
         <p>Industrial Engineering and Management, specialization in Computer Science, Stockholm, Sweden</p>
     </div>
     <div class="resume-item">
-        <p><strong>Östra Gymnasiet</strong> | 2019 - 2022</p>
+        <h3>Östra Gymnasiet</h3>
+        <p>2019 -- 2022</p>
         <p>Natural Science Program, Skogås, Sweden</p>
     </div>
 
+    <!-- Work Experience Section -->
     <div class="section-title">Work Experience</div>
+    <div class="section-divider"></div>
     <div class="resume-item">
-        <p><strong>Kitchen assistant</strong> | June 2023 - Present, Södersjukhuset, Stockholm, Sweden</p>
+        <h3>Kitchen assistant</h3>
+        <p>June, 2023 -- Present</p>
+        <p>Södersjukhuset, Stockholm, Sweden</p>
         <ul>
-            <li>Providing breakfast, lunch, and dinner to patients, handling dishes.</li>
-            <li>Assisting the ward with tasks not involving patient contact, such as delivering medications and blood samples.</li>
+            <li>Providing breakfast, lunch, and dinner to the patients as well as doing the dishes.</li>
+            <li>Assisted the ward with non-patient-contact tasks, such as handling medications and blood samples.</li>
         </ul>
     </div>
     <div class="resume-item">
-        <p><strong>Exam assistant</strong> | June 2023 - Present, Karolinska institutet, Stockholm, Sweden</p>
+        <h3>Exam assistant</h3>
+        <p>June, 2023 -- Present</p>
+        <p>Karolinska institutet, Stockholm, Sweden</p>
         <ul>
             <li>Supervising the practical final exam.</li>
-            <li>Playing the role of a patient for students’ diagnostic training.</li>
+            <li>Acted as a patient for diagnostic training.</li>
         </ul>
     </div>
     <div class="resume-item">
-        <p><strong>Supervisor production</strong> | June 2023 - July 2023, Runius Design, Stockholm, Sweden</p>
+        <h3>Supervisor production</h3>
+        <p>June, 2023 -- July, 2023</p>
+        <p>Runius Design, Stockholm, Sweden</p>
         <ul>
             <li>Supervised and participated in the production of soap holders.</li>
         </ul>
     </div>
 
+    <!-- Other Experience Section -->
     <div class="section-title">Other Experience</div>
+    <div class="section-divider"></div>
     <div class="resume-item">
         <p><strong>Chapter Engagements</strong>: IT-Responsible, I-Case Advanced</p>
     </div>
 
+    <!-- Skills Section -->
     <div class="section-title">Skills</div>
+    <div class="section-divider"></div>
     <ul class="skills">
         <li><strong>Programming Languages</strong>: Python, MATLAB</li>
         <li><strong>Software</strong>: Git, Excel, Word, PowerPoint</li>
     </ul>
 
+    <!-- Certificates Section -->
     <div class="section-title">Certificates</div>
+    <div class="section-divider"></div>
     <ul class="certificates">
         <li><strong>Driver's license</strong>, Class B</li>
     </ul>
